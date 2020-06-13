@@ -2,10 +2,12 @@ var input=document.getElementById("input1");
 var addbutton=document.getElementById("add-button");
 var lists=document.getElementById("lists");
 
+// keypress event handler for task input
 input.addEventListener("keypress",function(){
 	addbutton.style.display="block";
 });
 
+// crate an new task item in list container
 function createItem(itemvalue){
 	 var listItem=document.createElement('li');
 	 var leftpart=document.createElement('div');
@@ -26,12 +28,14 @@ function createItem(itemvalue){
 	 lists.appendChild(listItem);
 }
 
+// click event handler for add button
 addbutton.addEventListener("click",function(){	
 	let v=input.value;
 	createItem(v);
 	input.value="";
 	addbutton.style.display="none";
 	let items=document.querySelectorAll("#lists li");
+	// count and display number of tasks
 	let count=document.querySelector("#task-left span");
 	count.innerText=items.length;
 
