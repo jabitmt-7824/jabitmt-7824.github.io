@@ -14,6 +14,8 @@ h3{
 
 }
 
+/* input section lements styles  */
+
 #input-section{
 	background-color: white;
 	width: 80%;
@@ -57,6 +59,8 @@ h3{
 	display: none;
 }
 
+/* list view section elements styles */
+
 #list-view-section{
 	background-color: white;
 	margin: 2rem 10% ;
@@ -67,6 +71,21 @@ h3{
 	list-style: none;
 	padding: 1rem;
 }
+
+.lists{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	padding: 0.7rem;
+	margin-bottom: 4px;
+}
+
+.delete-btn{
+	width: 10%;
+}
+
+/* footer section lements styles */
 
 #footer{
 	display: flex;
@@ -99,18 +118,7 @@ h3{
 	width: 15%;
 }
 
-.lists{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	padding: 0.7rem;
-	margin-bottom: 4px;
-}
 
-.delete-btn{
-	width: 10%;
-}
 
 @media all and (max-width: 700px)
 {
