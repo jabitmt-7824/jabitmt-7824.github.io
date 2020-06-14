@@ -1,0 +1,15 @@
+<link rel="stylesheet" type="text/css" href="/css/home.css">
+<ul>
+    <% for(let i of hobbieList){ %>
+    <li>
+        <form action="delete-hobbie" method="POST">
+            <div><input type="checkbox" name="id" value="<%= i._id %>" /><label><%= i.name %></label></div>
+            <div><button>Delete</button><a href="/calender-view">Calender View</a></div>
+        </form>
+    </li>
+    <% } %>
+</ul>
+<div id="link-container">
+<a href="/add-form">ADD Hobbie</a>
+<a href="/calender-view">Calender View</a>
+</div>

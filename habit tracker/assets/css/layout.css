@@ -1,0 +1,15 @@
+header{
+	background-color: blue;
+	height:3rem;
+	text-align: center;
+	margin-top: 1rem;
+	text-transform: capitalize;
+	color:white;
+    font-size: 1.7rem;
+    padding-top: 0.7rem;
+}
+
+main{
+	width: 50%;
+	margin: 2rem 25%;
+}

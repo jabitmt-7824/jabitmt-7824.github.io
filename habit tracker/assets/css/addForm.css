@@ -1,0 +1,21 @@
+h3{
+	text-align: center;
+	text-decoration: underline;
+}
+
+form{
+	text-align: center;
+}
+
+form label{
+	width: 20%;
+	margin-right: 4px;
+}
+
+form input[type="text"]{
+	width: 50%;
+}
+
+form button{
+	margin-top: 1rem;
+}
