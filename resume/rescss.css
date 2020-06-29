@@ -1,0 +1,571 @@
+
+/* header */
+
+#Resume-header{
+	background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+	width: 100%;
+	height: 65vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow: hidden;
+	opacity: 0.8;
+}
+
+
+
+/* section */
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 20px;
+}
+
+section:nth-child(2n){
+	background-color: white;
+}
+
+section:nth-child(2n+1){
+	background-color: #f6f5f5;
+}
+
+/* section-head */
+
+.section-head span{
+	font-size: 2.7rem;
+	color: #2857a4;
+	font-weight: 900;
+	padding: 0.4rem;
+	margin-right: 0.7rem;
+}
+
+#nav{
+	margin-top: 2%;
+}
+
+/* horizontal list */
+
+.horizontal-list{
+	list-style: none;
+	text-align: center;
+}
+
+.horizontal-list li{
+	display: inline-block;
+	margin-top: 0.2rem;
+	margin-left: 0.2rem; 
+}
+
+ 
+.horizontal-list li a{
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	padding: 0.5rem;
+	line-height: 0.2rem;
+	font-size: 1rem;
+}
+ 
+.horizontal-list li a:hover{
+	color: rgb(25,150,233);
+	font-size: 1.5rem;
+	font-weight: 500;
+	border-bottom: 1px solid rgb(17,140,250);
+}
+
+#Resume-header>h1{
+	font-size: 3.4rem;
+	color: white;
+	text-align: center;
+	margin-top: 8rem;
+	line-height: 0.3rem;
+	letter-spacing: 0.2rem;
+	padding: 2rem;
+}
+
+#menu-icon{
+    color: white;
+    margin: 0;
+    margin-right: 5%;
+    display: none;
+    text-align: right;
+    margin-top:3%; 
+}
+
+#menu-icon i{
+	font-size: 2rem;
+}
+
+#dropdown-menu{
+	 background-color: #828470;
+	 box-shadow: 0px 0px 2px 4px black;
+	 margin:0;
+	 display: none;
+}
+
+#dropdown-menu ul{
+	list-style: none;
+	margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+}
+#dropdown-menu ul li{
+	margin: 0.4rem 0px;
+}
+
+#dropdown-menu ul a{
+	color: white;
+	text-decoration: none;
+}
+
+#dropdown-menu ul a:hover{
+	 font-size:1.2rem;
+	 color: blue;
+	 margin-bottom:5px solid white;
+}
+
+#menu:hover #dropdown-menu{
+    display: block;
+    position: absolute;
+    right: 3%;
+}
+
+/* social Icons */
+
+
+.social-icons .horizontal-list li a:hover{
+	border:0.4rem solid black;
+	border-radius: 50%;
+	box-shadow: 0px 0px 4px 6px lightgrey;
+	border-bottom: none;
+	font-size: 1rem;
+	font-weight: 0;
+    
+}
+
+/* About Section */
+
+#profile-image{
+   position: relative;
+   margin-top: -4%;
+}
+ 
+
+#profile-image img{
+	border-radius:50%;
+	width: 16vw;
+	height:22vh;
+}
+
+#profile-image img:hover{
+	box-shadow: 0px opx 4px 6px lightgrey;
+}
+
+#about-para{
+	margin:1rem 20vw;
+}
+
+#about-para p{
+	font-size: 1rem;
+	font-weight: 600rem;
+	word-spacing: 0.4rem;
+	text-align: center;
+}
+
+.sp{
+	color: rgb(70,160,240);
+}
+
+.sp:hover{
+	color: #ff4263;
+	font-size: 1.4rem;
+	border-bottom: 1px solid black;
+}
+
+/* skills */
+
+#skills-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: space-between;
+	margin-left: 10vw;
+	width: 60vw;
+	margin-top: 2rem; 
+}
+
+.skill-display{
+	border:1px solid lightgrey;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+	width: 12rem;
+	height: 2.4rem;
+	overflow: hidden;
+	margin: 25px;
+}
+
+.skill-percentage{
+	height: 2.4rem;
+	border-radius: 8px;
+	overflow: hidden;
+	display: flex;
+	box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+}
+
+.skill-percentage span{
+	color: black;
+	font-weight: 700;
+	font-size: 1rem;
+	padding: 0.2rem;
+	align-self: center;
+	text-align: center;
+}
+
+.fifty-five{
+	width: 55%;
+	background-color:blue;
+}
+
+.ninty{
+	width: 90%;
+	background-color:orange;
+}
+
+.eighty-five{
+	width: 85%;
+	background-color:violet;
+}
+ .sixty{
+	width: 60%;
+	background-color:green;
+}
+
+
+/* portfolio */
+
+#portfolio-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 3rem;
+	box-sizing: border-box;
+	width: 70%;
+	margin-bottom: 100px;
+}
+
+.portfolio-display{
+	width: 25%;
+	margin: 10px;
+	overflow: hidden;
+	background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.portfolio-display img{
+	width: 100%;
+	height: 100%;
+}
+
+.portfolio-details {
+	transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+
+.portfolio-display:hover{
+	box-shadow: 0 0 20px #74ADC8;
+	
+}
+
+.portfolio-display:hover .portfolio-details{
+	background-color: #80808078;
+    color: white;
+}
+
+/* contact */
+
+#contact{
+	background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+	/*margin-bottom:400px;*/
+
+}
+
+#contact h1 span,#contact-container{
+	color: white;
+	padding-top:50px;
+}
+
+#contact-container{
+	display: flex;;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 8px;
+}
+
+#contact-form{
+	background-color: transparent;
+	width: 40%;
+	margin:3rem;
+}
+
+#contact-form input[type="text"],input[type="email"]{
+	display: block;
+	width: 27rem;
+	height: 2.4rem;
+	background-color: transparent;
+	border: 0px solid transparent;
+	border-bottom: 1px solid white;
+	
+
+}
+
+#contact-form textarea{
+	display: block;
+	width: 27rem;
+	height: 3.7rem;
+	background-color: transparent;
+	border: 0px solid transparent;
+	border-bottom: 1px solid white;
+	
+}
+
+#contact-form button[type="submit"]{
+	color: white;
+	font-size: 0.7rem;
+	margin-top: 1rem;
+	overflow: hidden;
+	background-color: transparent;
+	display: block;
+	width: 8rem;
+	height: 2rem;
+	margin-left: 7rem;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+#contact-details{
+	width: 40%;
+	margin:3rem;
+}
+
+.Address-elem{
+	margin-top: 1rem;
+}
+
+#contact .social-icons .horizontal-list{
+	vertical-align: bottom;
+}
+
+/* work experience & Education*/
+
+
+#timeline{
+	width: 75%;
+	position: relative;
+	margin: 4%;
+}
+
+.timeline-box{
+	padding: 0.7rem;
+    width: 35%;
+    min-height: 6%;
+    position: relative;
+    left: 5%;
+    text-align: right;
+    border: 0px solid black;
+}
+
+.timeline-box:nth-child(2n+1)::after{
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+	width: 0.7rem;
+	height:0.7rem;
+	background-color: #cdcbcb;
+	top: 50%;
+	right: -23.5%;
+	z-index: 1;
+	
+}
+
+.timeline-box:nth-child(2n)::after{
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+	width: 0.7rem;
+	height:0.7rem;
+	background-color: #cdcbcb;
+	top: 50%;
+	left: -9%;
+	z-index: 1;
+}
+
+.timeline-box:nth-child(2n){
+	left: 53%;
+}
+
+.timeline-divider {
+    position: absolute;
+    width: 0;
+    margin-top: 16.5%;
+    left: 50%;
+    border: 2px dashed #0096fa6b;
+    height:82%;
+}
+
+.timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+    left: -5%;
+ 
+}
+
+#experience .timeline-divider i{
+    transform: rotate(90deg);
+  	margin-top: -35px;
+  	display: block;
+    color: #2857a4;
+}
+
+#education .timeline-divider i{
+	transform: rotate(0deg);
+  	margin-top: -35px;
+  	display: block;
+    color: #2857a4;
+}
+
+.timeline-head{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.image-cont img{
+	width: 4rem;
+	height: 4rem;
+}
+
+.head-cont{
+	font-size: 1.1rem;
+}
+
+.head-cont h4{
+	color: #2031ce;
+}
+
+.head-cont h5{
+	color:#f97b04;
+	margin-bottom: 0%; 
+}
+
+.head-cont h6{
+	margin-top: 0%;
+	color:#c0bbbb;
+}
+
+.timeline-details p{
+	font-family: sans-serif;
+	color: #c0bbbb;
+	font-size: 0.8rem;
+	margin-bottom: 0%;
+}
+
+@media only screen and (max-width: 768px){
+
+	html{
+		font-size: 10px;
+	}
+	
+	#Resume-header{
+		background-size: contain;
+	}
+
+     #profile-image{
+    	margin-top: -8%;
+    }
+
+    .skill-display{
+    	width: 16rem;
+    }
+
+    .timeline-box{
+    	left: 25% !important;
+    }
+    .timeline-divider{
+    	left: 22%;
+    	height: 52%;
+    	margin-top: 21%;
+    }
+    .timeline-box::after{
+    	left: -35.4% !important;
+    }
+    
+    .portfolio-display{
+        width:35%;
+    }
+}
+
+@media only screen and (max-width: 572px){
+
+	html{
+		font-size: 8px;
+	}
+
+	#nav{
+		display: none;
+	}
+
+	#menu-icon{
+		display: block;
+	}
+
+	/* header */
+	
+	#Resume-header{
+		background-size: contain;
+	}
+
+    #profile-image{
+    	margin-top: -30%;
+    }
+
+    .skill-display{
+    	width: 20rem;
+    }
+
+    .timeline-box{
+    	left: 25% !important;
+    }
+
+    .timeline-divider{
+    	left: 24%;
+    	height: 42%;
+    	margin-top: 22%;
+    }
+
+    .timeline-box::after{
+    	left: -29% !important;
+    }
+    
+    .portfolio-display{
+        width:50%;
+    }
+
+}
