@@ -12,7 +12,7 @@ class App extends React.Component {
     }
   }
 
-  // function for changing value in state according to dropdown list
+  // function for changing pos value in state according to dropdown list
   handleChange = (e) => {
     this.setState({
       pos: e.target.value
